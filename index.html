@@ -1,25 +1,3 @@
-<?php
-
-//koneksi ke database
-$conn = mysqli_connect("localhost", "id22064330_portfolio", "Forghell10.", "id22064330_nurul_portfolio");
-
-
-//apakah tombol submit sudah ditekan atau belum
-if(isset($_POST["submit"])) {
-  
-  //ambil data dari tiap elemen
-  $nama = $_POST["name"];
-  $email = $_POST["email"];
-  $phone = $_POST["phone"];
-  $pesan = $_POST["messages"];
-
-  //query insert data
-  $query = "INSERT INTO table_contact VALUES('', '$nama', '$email', '$phone', '$pesan')";
-  mysqli_query($conn, $query);
-
-}
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,7 +50,7 @@ if(isset($_POST["submit"])) {
       </div>
 
       <div class="btn-box">
-        <a href="https://drive.google.com/file/d/1LLpfRWhY_AF6cq6Wb0Bg3l7J-fJpZPCU/view?usp=sharing" class="btn" target="_blank">Download CV</a>
+        <a href="https://drive.google.com/file/d/1IUWhsNIElZpC-u0QKjXw8lu5EZq4gcSZ/view?usp=sharing" class="btn" target="_blank">Download CV</a>
       </div>
 
       <div class="social-icons">
